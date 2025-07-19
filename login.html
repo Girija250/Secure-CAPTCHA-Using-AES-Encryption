@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secure CAPTCHA Login</title>
+</head>
+<body>
+    <h2>Secure CAPTCHA Login System</h2>
+    <form action="/verify" method="post">
+        <img src="{{ image_path }}" alt="CAPTCHA"><br><br>
+        <input type="text" name="captcha_input" required placeholder="Enter CAPTCHA"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
